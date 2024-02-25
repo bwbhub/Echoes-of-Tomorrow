@@ -1,0 +1,17 @@
+@use "./font.scss";
+
+#features {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  & .title {
+    font-size: var(--fs-xxl);
+    text-align: center;
+  }
+  & .container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}

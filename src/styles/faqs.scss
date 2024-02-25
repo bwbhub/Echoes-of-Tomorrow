@@ -1,0 +1,22 @@
+@use "../styles/font.scss";
+
+#faqs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 50px;
+  & .title {
+    font-size: var(--fs-xl);
+  }
+  & .pre-text {
+    font-size: var(--fs-xs);
+  }
+  & .question {
+    width: 40%;
+    & hr {
+      border: 1px solid #1b1b1b;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@use "../styles/font.scss";
+
+#about {
+  margin-top: 100px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  & .about {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    & .title {
+      font-size: var(--fs-xxl);
+      font-family: "Bebas Neue", sans-serif;
+    }
+    & .enroll {
+      background-color: transparent;
+      border: 1px #fff solid;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-size: var(--fs-xxs);
+      cursor: pointer;
+    }
+    & .subtext {
+      text-align: center;
+      width: 70%;
+      font-size: var(--fs-xs);
+    }
+    & .hidden {
+      display: none;
+    }
+    & .open {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@use './font.scss';
+
+header {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 50px;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+  justify-content: space-between;
+  & h1 {
+    font-family: "Bebas Neue";
+    font-size: var(--fs-s);
+  }
+  & ul {
+    display: flex;
+    gap: 20px;
+    & li {
+      list-style: none;
+    }
+  }
+  & .enroll {
+    background-color: transparent;
+    border: 1px #fff solid;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: var(--fs-xxs);
+  }
+}

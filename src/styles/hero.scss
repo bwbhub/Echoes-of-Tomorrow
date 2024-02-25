@@ -1,0 +1,36 @@
+@use "./font.scss";
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  & .main {
+    & img {
+      width: 100%;
+      z-index: 0;
+    }
+  }
+  & .text {
+    position: absolute;
+    margin-right: 100px;
+    right: 0;
+    & .title {
+      font-family: "Bebas Neue";
+      font-size: var(--fs-xxxl);
+      line-height: 130px;
+    }
+    & .subtext {
+      font-size: var(--fs-xxs);
+    }
+    & .enroll {
+      margin-top: 20px;
+      font-size: var(--fs-xxs);
+      background-color: transparent;
+      border: 1px #fff solid;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 25px;
+    }
+  }
+}

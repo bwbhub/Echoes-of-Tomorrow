@@ -1,0 +1,63 @@
+@use "../styles/font.scss";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 600px;
+  filter: grayscale(1);
+  border-radius: 25px;
+  overflow: hidden;
+  &:hover {
+    filter: grayscale(0);
+    .image {
+      img {
+        width: 120%;
+      }
+    }
+  }
+  & .image {
+    overflow: hidden;
+    height: 800px;
+    position: relative;
+    & img {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition-property: filter width;
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
+    }
+  }
+  & .text {
+    position: absolute;
+    padding: 30px;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    & .title-card {
+      font-size: var(--fs-l);
+    }
+    & .enroll {
+      background-color: transparent;
+      border: 1px #fff solid;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-size: var(--fs-xxs);
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    & .hidden {
+      display: none;
+    }
+  }
+  & .active {
+    backdrop-filter: blur(10px);
+  }
+}
