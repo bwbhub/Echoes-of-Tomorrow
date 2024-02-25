@@ -13,7 +13,17 @@ export default function Hero() {
           <p className="subtext">
             Embark on a gripping journey in Echoes of Tomorrow
           </p>
-          <button className="enroll">Play Now</button>
+          <button
+            className="enroll"
+            onClick={() => {
+              const download = document.getElementById("download");
+              download?.scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
+          >
+            Play Now
+          </button>
         </div>
       </div>
     </section>

@@ -1,0 +1,29 @@
+@use "../styles/font.scss";
+
+#download {
+  height: 100vh;
+  background-image: url(../assets/images/download.png);
+  & .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    top: 50%;
+    transform: translatey(-50%);
+    & .title {
+      font-size: var(--fs-xxl);
+    }
+    & .subtext {
+      font-size: var(--fs-xs);
+    }
+    & .enroll {
+      background-color: transparent;
+      border: 1px #fff solid;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-size: var(--fs-xxs);
+      cursor: pointer;
+    }
+  }
+}
