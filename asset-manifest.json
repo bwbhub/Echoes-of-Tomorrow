@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Echoes-of-Tomorrow/static/css/main.a472946f.css",
-    "main.js": "/Echoes-of-Tomorrow/static/js/main.76a965ec.js",
+    "main.css": "/Echoes-of-Tomorrow/static/css/main.2097e58f.css",
+    "main.js": "/Echoes-of-Tomorrow/static/js/main.212cb3b3.js",
     "static/media/bar1.png": "/Echoes-of-Tomorrow/static/media/bar1.46740f529b0c981af2d8.png",
     "static/media/download.png": "/Echoes-of-Tomorrow/static/media/download.72f0e3b40fd75323952a.png",
     "static/media/mainchar1v2.png": "/Echoes-of-Tomorrow/static/media/mainchar1v2.06e5536039b723bf3401.png",
@@ -9,11 +9,11 @@
     "static/media/blksoldiers1-card.png": "/Echoes-of-Tomorrow/static/media/blksoldiers1-card.aba70da9b677a6844f78.png",
     "static/media/whsoldiers1-card.jpg": "/Echoes-of-Tomorrow/static/media/whsoldiers1-card.221f010cd6907a96581f.jpg",
     "index.html": "/Echoes-of-Tomorrow/index.html",
-    "main.a472946f.css.map": "/Echoes-of-Tomorrow/static/css/main.a472946f.css.map",
-    "main.76a965ec.js.map": "/Echoes-of-Tomorrow/static/js/main.76a965ec.js.map"
+    "main.2097e58f.css.map": "/Echoes-of-Tomorrow/static/css/main.2097e58f.css.map",
+    "main.212cb3b3.js.map": "/Echoes-of-Tomorrow/static/js/main.212cb3b3.js.map"
   },
   "entrypoints": [
-    "static/css/main.a472946f.css",
-    "static/js/main.76a965ec.js"
+    "static/css/main.2097e58f.css",
+    "static/js/main.212cb3b3.js"
   ]
 }
