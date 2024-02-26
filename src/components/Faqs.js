@@ -39,7 +39,6 @@ export default function Faqs() {
       {faqsList.map((list, index) => (
         <div className="question">
           <Collapse key={index} title={list.title} text={list.content} />
-          <hr key={index} />
         </div>
       ))}
     </section>

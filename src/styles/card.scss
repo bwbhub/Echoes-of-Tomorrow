@@ -52,12 +52,29 @@
       font-size: var(--fs-xxs);
       cursor: pointer;
       margin-bottom: 10px;
+      &:hover {
+        background-color: #fff;
+        color: #000;
+      }
     }
     & .hidden {
-      display: none;
+      opacity: 0;
+      filter: blur(5px);
+      transform: translateY(10px);
+      transition: all 700ms;
+    }
+    & .open {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateY(0);
     }
   }
+  & .inactive {
+    transition: backdrop-filter 200ms;
+    backdrop-filter: blur(0);
+  }
   & .active {
+    transition: backdrop-filter 200ms;
     backdrop-filter: blur(10px);
   }
 }

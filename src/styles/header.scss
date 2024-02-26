@@ -32,5 +32,9 @@ header {
     padding: 10px 20px;
     border-radius: 25px;
     font-size: var(--fs-xxs);
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
   }
 }

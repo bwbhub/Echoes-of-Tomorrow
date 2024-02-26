@@ -9,12 +9,12 @@ export default function Card({ title, text, image }) {
       <div className="image">
         <img src={image} alt={title} />
       </div>
-      <div className={`text ${open ? "active" : ""}`}>
+      <div className={`text inactive ${open ? "active" : ""}`}>
         <h3 className="title-card"> {title} </h3>
         <button className="enroll" onClick={handleMore}>
           Read More
         </button>
-        <p className={`subtext ${open ? "open" : "hidden"}`}> {text} </p>
+        <p className={`subtext hidden ${open ? "open" : ""}`}> {text} </p>
       </div>
     </div>
   );

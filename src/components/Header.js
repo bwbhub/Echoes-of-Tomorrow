@@ -55,16 +55,6 @@ export default function Header() {
           >
             FAQ's
           </li>
-          <li
-            onClick={() => {
-              const newsletter = document.getElementById("newsletter");
-              newsletter?.scrollIntoView({
-                behavior: "smooth",
-              });
-            }}
-          >
-            Newsletter
-          </li>
         </ul>
       </nav>
       <button

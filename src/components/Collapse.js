@@ -9,6 +9,7 @@ export default function Collapse({ title, text }) {
 
   return (
     <div className="container">
+      <hr />
       <div className="topbar">
         <h2>{title}</h2>
         {open ? (
@@ -21,7 +22,7 @@ export default function Collapse({ title, text }) {
           </button>
         )}
       </div>
-      <div className={`bottombar ${open ? "open" : ""}`}>
+      <div className={`bottombar hidden ${open ? "open" : ""}`}>
         <p className="text">{text}</p>
       </div>
     </div>

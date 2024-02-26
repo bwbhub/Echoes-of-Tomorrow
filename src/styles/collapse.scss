@@ -1,52 +1,44 @@
+@use "../styles/font.scss";
+
 .container {
   width: 100%;
   position: relative;
   display: inline-block;
-  .topbar {
+  & .topbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 15px;
     border-radius: 5px;
     position: relative;
-    @media screen and (max-width: 375px) {
-      h2 {
-        font-size: 13px;
-        font-weight: 500;
-      }
+    & .title {
+      font-size: var(--fs-s);
     }
-    .btn {
+    & .btn {
       padding: 8px;
       border-radius: 50%;
       border: none;
       cursor: pointer;
     }
   }
-  .bottombar {
-    border-radius: 10px 10px 5px 5px;
-    @media screen and (max-width: 375px) {
-      p,
-      li {
-        font-size: 12px;
-      }
-    }
-
-    //Animation
-
+  & .bottombar {
     max-height: 0px;
     overflow: hidden;
     transition:
-      max-height 0.3s ease-in-out,
-      transform 0.3s ease-in-out;
-
-    .text {
+      max-height 500ms ease-in-out,
+      transform 500ms ease-in-out;
+    & .text {
+      font-size: var(--fs-xxs);
       padding: 20px;
     }
-    li {
+    & li {
       list-style: none;
     }
   }
-  .open {
+  & .open {
     max-height: 300px;
+    transition:
+      max-height 500ms ease-in-out,
+      transform 500ms ease-in-out;
   }
 }

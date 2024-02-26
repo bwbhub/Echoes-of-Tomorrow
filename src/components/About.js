@@ -21,7 +21,7 @@ export default function About() {
         <button className="enroll" onClick={handleMore}>
           Read More
         </button>
-        <p className={`subtext ${open ? "open" : "hidden"}`}>
+        <p className={`subtext hidden ${open ? "open" : ""}`}>
           However, everything changed when you encountered a group of rebels
           fighting to defend their homeland from the corporation's ruthless
           expansion. Witnessing the devastation wrought upon innocent civilians
